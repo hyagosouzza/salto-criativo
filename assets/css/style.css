@@ -1827,6 +1827,13 @@ a {
   
 }
 
+#camera {
+  z-index: 999;
+  position: absolute;
+  bottom: 4em;
+  right: 7em;
+}
+
 #flex-container {
   display: flex; 
   flex-direction: row; 
