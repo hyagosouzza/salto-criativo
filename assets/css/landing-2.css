@@ -6,6 +6,27 @@ h1, h2 {
   line-height: 1;
 }
 
+#section-servicos .container {
+  padding-bottom: 200px;
+}
+
+#section-servicos img {
+  position: absolute;
+  top: -150px;
+}
+
+#section-cta .container {
+  padding: 150px 0;
+}
+
+#section-cta .container h2 {
+  font-size: 4.6em;
+}
+
+#section-cta .container h3 {
+  font-size: 3em;
+}
+
 .bg-light {
   background-color: #f2f4f9 !important;
 }
