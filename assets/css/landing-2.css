@@ -6,17 +6,55 @@ h1, h2 {
   line-height: 1;
 }
 
+p {
+  font-weight: 600;
+}
+
+#section-nos h1 {
+  font-size: 3.8em;
+}
+
+#section-servicos-2 .container {
+  padding-bottom: 300px;
+  padding-top: 150px;
+}
+
+#section-servicos-2 .container h2 {
+  font-size: 4.6em;
+}
+
+#section-servicos-2 .container h3 {
+  font-size: 3em;
+}
+
+#section-servicos-2 img {
+  position: absolute;
+  top: -350px;
+  left: -50px;
+}
+
 #section-servicos .container {
   padding-bottom: 200px;
 }
 
 #section-servicos img {
   position: absolute;
-  top: -150px;
+  top: -190px;
+  left: -50px;
+}
+
+#section-servicos-1 .container {
+  padding-bottom: 200px;
+}
+
+#section-servicos-1 img {
+  position: absolute;
+  top: -250px;
+  left: -100px;
 }
 
 #section-cta .container {
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 #section-cta .container h2 {
@@ -25,6 +63,53 @@ h1, h2 {
 
 #section-cta .container h3 {
   font-size: 3em;
+}
+
+#section-servicos .container h2 {
+  font-size: 4.6em;
+}
+
+#section-servicos .container h3 {
+  font-size: 3em;
+}
+
+#section-servicos-1 .container h2 {
+  font-size: 4.6em;
+}
+
+#section-servicos-1 .container h3 {
+  font-size: 3em;
+}
+
+#section-ecommerce .container h2 {
+  font-size: 4.6em;
+}
+
+#section-ecommerce .container h3 {
+  font-size: 3em;
+}
+
+#section-ecommerce .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#section-ecommerce img {
+  position: absolute;
+  top: -200px;
+  left: -50px;
+}
+
+#section-video .container h2 {
+  font-size: 4.6em;
+}
+
+#section-video .container h3 {
+  font-size: 3em;
+}
+
+#section-video {
+  
 }
 
 .bg-light {
@@ -61,9 +146,9 @@ h1, h2 {
 .pb_slant-white:after {
   content: "";
   position: absolute;
-  bottom: -130px;
+  bottom: -230px;
   left: -50px;
-  height: 220px;
+  height: 320px;
   width: 130%;
   background-color: #f2f4f9;
   -webkit-transform: rotate(4deg);
@@ -122,4 +207,14 @@ h1, h2 {
 .pb_cover_v3 .btn,
 .pb_xl_py_cover .btn {
   color: white;
+}
+
+
+.pb_cover, .pb_cover_v1, .pb_cover_v2, .pb_cover_v3, .pb_cover_v4,
+.pb_cover > .container > .row, .pb_cover_v1 > .container > .row, .pb_cover_v2 > .container > .row, .pb_cover_v3 > .container > .row, .pb_cover_v4 > .container > .row {
+  height: auto;
+}
+
+.espaco-inicial:after {
+  bottom: -170px;
 }

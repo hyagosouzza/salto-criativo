@@ -1803,9 +1803,9 @@ a {
   z-index: 9999;
 }
 
-.sections-vh {
+/* .sections-vh {
   min-height: 80vh;
-}
+} */
 
 @media (min-width: 320px) and (max-width: 775px) {
   
@@ -1828,10 +1828,14 @@ a {
 }
 
 #camera {
-  z-index: 999;
+  z-index: 10;
   position: absolute;
-  bottom: 4em;
-  right: 7em;
+  bottom: 40px;
+  right: 140px;
+}
+
+#camera img {
+  width: 580px;
 }
 
 #flex-container {
