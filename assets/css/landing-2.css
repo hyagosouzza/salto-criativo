@@ -2,7 +2,8 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2 {
+h1,
+h2 {
   line-height: 1;
 }
 
@@ -12,6 +13,10 @@ p {
 
 #section-nos h1 {
   font-size: 3.8em;
+}
+
+#section-nos img {
+  width: 650px;
 }
 
 #section-servicos-2 .container {
@@ -108,9 +113,7 @@ p {
   font-size: 3em;
 }
 
-#section-video {
-  
-}
+#section-video {}
 
 .bg-light {
   background-color: #f2f4f9 !important;
@@ -138,6 +141,7 @@ p {
 .pb_slant-white {
   position: relative;
 }
+
 .pb_slant-light:after,
 .pb_slant-green:after,
 .pb_slant-yellow:after,
@@ -156,6 +160,7 @@ p {
   transform: rotate(4deg);
   z-index: 10;
 }
+
 .pb_slant-light.pb_slant-reverse:after,
 .pb_slant-green.pb_slant-reverse:after,
 .pb_slant-yellow.pb_slant-reverse:after,
@@ -198,6 +203,7 @@ p {
   color: rgba(255, 255, 255, 0.5);
   border-bottom: 2px solid transparent;
 }
+
 .pb_cover_v3 a:hover,
 .pb_xl_py_cover a:hover {
   color: white;
@@ -210,8 +216,16 @@ p {
 }
 
 
-.pb_cover, .pb_cover_v1, .pb_cover_v2, .pb_cover_v3, .pb_cover_v4,
-.pb_cover > .container > .row, .pb_cover_v1 > .container > .row, .pb_cover_v2 > .container > .row, .pb_cover_v3 > .container > .row, .pb_cover_v4 > .container > .row {
+.pb_cover,
+.pb_cover_v1,
+.pb_cover_v2,
+.pb_cover_v3,
+.pb_cover_v4,
+.pb_cover>.container>.row,
+.pb_cover_v1>.container>.row,
+.pb_cover_v2>.container>.row,
+.pb_cover_v3>.container>.row,
+.pb_cover_v4>.container>.row {
   height: auto;
 }
 
@@ -222,3 +236,67 @@ p {
 
 /*  bora pro mobile, caralho  */
 
+
+@media (max-width: 767px) {
+  #section-nos img {
+    max-width: 100%;
+    padding-top: 40px;
+  }
+
+  #section-nos .container>div.row {
+    padding-top: 200px;
+  }
+
+  #section-servicos img {
+    position: relative;
+    max-width: 100%;
+    top: auto;
+    left: auto;
+    margin-bottom: -250px;
+  }
+
+  #section-servicos-1 img {
+    position: relative;
+    top: auto;
+    left: auto;
+    max-width: 100%;
+  }
+
+  #section-cta button {
+    margin-left: 22.5vw;
+  }
+
+  #section-ecommerce .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #section-ecommerce img {
+    position: relative;
+    top: auto;
+    left: auto;
+    max-width: 100%;
+  }
+
+  #section-servicos-2 img {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+  }
+
+  #section-servicos-2 .container {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  #camera {
+    z-index: 10;
+    position: relative;
+    bottom: auto;
+    width: 580px;
+    max-width: 100%;
+    right: 0;
+    margin-bottom: -100px;
+}
+}
