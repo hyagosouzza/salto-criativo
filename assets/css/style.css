@@ -1830,12 +1830,12 @@ a {
 #camera {
   z-index: 10;
   position: absolute;
-  bottom: 40px;
-  right: 140px;
+  bottom: -110px;
+  width: 580px;
+  right: 60px;
 }
 
 #camera img {
-  width: 580px;
 }
 
 #flex-container {
