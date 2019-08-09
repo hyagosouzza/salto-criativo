@@ -2,6 +2,119 @@ body {
   overflow-x: hidden;
 }
 
+h1,
+h2 {
+  line-height: 1;
+}
+
+p {
+  font-weight: 600;
+}
+
+#section-nos h1 {
+  font-size: 3.8em;
+}
+
+#section-nos img {
+  width: 650px;
+}
+
+#section-servicos-2 .container {
+  padding-bottom: 300px;
+  padding-top: 150px;
+}
+
+#section-servicos-2 .container h2 {
+  font-size: 4.6em;
+}
+
+#section-servicos-2 .container h3 {
+  font-size: 3em;
+}
+
+#section-servicos-2 img {
+  position: absolute;
+  top: -350px;
+  left: -50px;
+}
+
+#section-servicos .container {
+  padding-bottom: 200px;
+}
+
+#section-servicos img {
+  position: absolute;
+  top: -190px;
+  left: -50px;
+}
+
+#section-servicos-1 .container {
+  padding-bottom: 200px;
+}
+
+#section-servicos-1 img {
+  position: absolute;
+  top: -250px;
+  left: -100px;
+}
+
+#section-cta .container {
+  padding: 100px 0;
+}
+
+#section-cta .container h2 {
+  font-size: 4.6em;
+}
+
+#section-cta .container h3 {
+  font-size: 3em;
+}
+
+#section-servicos .container h2 {
+  font-size: 4.6em;
+}
+
+#section-servicos .container h3 {
+  font-size: 3em;
+}
+
+#section-servicos-1 .container h2 {
+  font-size: 4.6em;
+}
+
+#section-servicos-1 .container h3 {
+  font-size: 3em;
+}
+
+#section-ecommerce .container h2 {
+  font-size: 4.6em;
+}
+
+#section-ecommerce .container h3 {
+  font-size: 3em;
+}
+
+#section-ecommerce .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#section-ecommerce img {
+  position: absolute;
+  top: -200px;
+  left: -50px;
+}
+
+#section-video .container h2 {
+  font-size: 4.6em;
+}
+
+#section-video .container h3 {
+  font-size: 3em;
+}
+
+#section-video {}
+
 .bg-light {
   background-color: #f2f4f9 !important;
 }
@@ -28,6 +141,7 @@ body {
 .pb_slant-white {
   position: relative;
 }
+
 .pb_slant-light:after,
 .pb_slant-green:after,
 .pb_slant-yellow:after,
@@ -36,9 +150,9 @@ body {
 .pb_slant-white:after {
   content: "";
   position: absolute;
-  bottom: -100px;
+  bottom: -230px;
   left: -50px;
-  height: 200px;
+  height: 320px;
   width: 130%;
   background-color: #f2f4f9;
   -webkit-transform: rotate(4deg);
@@ -46,6 +160,7 @@ body {
   transform: rotate(4deg);
   z-index: 10;
 }
+
 .pb_slant-light.pb_slant-reverse:after,
 .pb_slant-green.pb_slant-reverse:after,
 .pb_slant-yellow.pb_slant-reverse:after,
@@ -88,6 +203,7 @@ body {
   color: rgba(255, 255, 255, 0.5);
   border-bottom: 2px solid transparent;
 }
+
 .pb_cover_v3 a:hover,
 .pb_xl_py_cover a:hover {
   color: white;
@@ -97,4 +213,90 @@ body {
 .pb_cover_v3 .btn,
 .pb_xl_py_cover .btn {
   color: white;
+}
+
+
+.pb_cover,
+.pb_cover_v1,
+.pb_cover_v2,
+.pb_cover_v3,
+.pb_cover_v4,
+.pb_cover>.container>.row,
+.pb_cover_v1>.container>.row,
+.pb_cover_v2>.container>.row,
+.pb_cover_v3>.container>.row,
+.pb_cover_v4>.container>.row {
+  height: auto;
+}
+
+.espaco-inicial:after {
+  bottom: -170px;
+}
+
+
+/*  bora pro mobile, caralho  */
+
+
+@media (max-width: 767px) {
+  #section-nos img {
+    max-width: 100%;
+    padding-top: 40px;
+  }
+
+  #section-nos .container>div.row {
+    padding-top: 200px;
+  }
+
+  #section-servicos img {
+    position: relative;
+    max-width: 100%;
+    top: auto;
+    left: auto;
+    margin-bottom: -250px;
+  }
+
+  #section-servicos-1 img {
+    position: relative;
+    top: auto;
+    left: auto;
+    max-width: 100%;
+  }
+
+  #section-cta button {
+    margin-left: 22.5vw;
+  }
+
+  #section-ecommerce .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #section-ecommerce img {
+    position: relative;
+    top: auto;
+    left: auto;
+    max-width: 100%;
+  }
+
+  #section-servicos-2 img {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+  }
+
+  #section-servicos-2 .container {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  #camera {
+    z-index: 10;
+    position: relative;
+    bottom: auto;
+    width: 580px;
+    max-width: 100%;
+    right: 0;
+    margin-bottom: -100px;
+}
 }
