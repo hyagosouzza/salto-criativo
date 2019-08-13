@@ -9,9 +9,8 @@
 
   <!-- ATENÇÃO: ALTERAR DESCRIÇÃO ABAIXO -->
   <meta name="description" content="DESCRIÇÃO DO SITE AQUI // ISSO APARECE NO GOOGLE">
-  
-  <meta name="keywords"
-    content="Agência, Estúdio, Publicidade, Filmagem">
+
+  <meta name="keywords" content="Agência, Estúdio, Publicidade, Filmagem">
 
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400"
     rel="stylesheet">
@@ -70,7 +69,7 @@
         </div> -->
         <div class="col-md-7">
           <h1 class="title white-text rotation uppercase"><b>Um estúdio especialista </b><br>
-          <span class="darkblue-text rotation small">em Resultados Digitais</span></h1>
+            <span class="darkblue-text rotation small">em Resultados Digitais</span></h1>
         </div>
         <div style="z-index: 999;" class="col-md-5 relative align-self-center">
           <img src="assets/images/computador@2x.png" alt="Agência especialista em resultados digitais">
@@ -104,7 +103,7 @@
   <section style="padding-top: 0px;" class="pb_section bg-green pb_slant-white" id="section-cta">
     <div class="container">
       <div class="row">
-          <div class="col-md-6" style="z-index: 999;">
+        <div class="col-md-6" style="z-index: 999;">
           <h2 class="title white-text rotation"><b>Sua Empresa precisa</b></h2>
           <h3 class="sub-title darkgreen-text rotation"><b>dar um salto nas vendas?</b></h3>
           <button id="btn-c" class="btn">Conheça nossos serviços</button>
@@ -192,15 +191,15 @@
                 ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
             </div>
           </div>
-          
+
         </div>
         <!-- <div class="col-md-1"></div> -->
         <div class="col-md-5">
-          <img src="assets/images/camera.png"  id="camera">
+          <img src="assets/images/camera.png" id="camera">
         </div>
       </div>
     </div>
-    
+
   </section>
   <!-- END section -->
 
@@ -209,18 +208,55 @@
     <div class="container">
       <div class="row text-center justify-content-center">
         <div style="z-index: 999;" class="col">
-          <h2 class="title darkblue-text rotation"><b>Preparado para tornar o</b><span style="color: #e9c559"> seu Negócio</span></h2>
+          <h2 class="title darkblue-text rotation"><b>Preparado para tornar o</b><span style="color: #e9c559"> seu
+              Negócio</span></h2>
           <h3 style="color: #e9c559" class="title rotation"><b>mais lucrativo?</b></h3>
 
           <br>
           <h3 class="title darkblue-text rotation">Solicite seu orçamento</h3>
-          <button id="btn-a" class="btn">aqui&nbsp;<img style="width: 32px"
-              src="assets/images/whatsapp-logo.png"></button>
+          <button id="btn-a" class="btn" data-toggle="modal" data-target="#contatoModal">aqui&nbsp;<img
+              style="width: 32px" src="assets/images/whatsapp-logo.png"></button>
         </div>
       </div>
     </div>
   </section>
   <!-- END section -->
+
+  <!-- Modal Orçamento/Contato -->
+  <div class="modal fade" id="contatoModal" tabindex="-1" role="dialog" aria-labelledby="contatoModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contatoModalLabel">Entre em Contato</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="myform" method="post">
+            <div class="form-group">
+              <input type="text" class="form-control" name="nome" placeholder="Nome">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="telefone" placeholder="Telefone">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Mensagem" class="form-control" name="mensagem" rows="3"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+          <span id="formResult">asdsadasd</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer class="pb_footer pb_section bg-dark" role="contentinfo" style="padding-bottom: 5em;">
     <div class="container" style="padding-top: 5em;">
@@ -258,8 +294,8 @@
 
   <!-- Stick Whatsapp -->
   <div class="whats">
-    <a href="#">
-      <img style="width: 70%" src="assets/images/whatsapp.png">
+    <a href="https://api.whatsapp.com/send?phone=5562992489717&text=Salto%20Criativo" target="_blank"><img
+        style="width: 70%" src="assets/images/whatsapp.png">
     </a>
   </div>
 
@@ -275,6 +311,18 @@
   <script src="assets/js/jquery.easing.1.3.js"></script>
 
   <script src="assets/js/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"
+    integrity="sha256-yE5LLp5HSQ/z+hJeCqkz9hdjNkk1jaiGG0tDCraumnA=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_qdh1PbrF4lfyRNAww0fKM");
+    })();
+  </script>
+
+  <script src="assets/js/contato.js"></script>
 
 </body>
 

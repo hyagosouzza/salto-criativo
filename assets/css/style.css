@@ -13,8 +13,12 @@ body {
   letter-spacing: 1px;
 }
 
-p {
+p, form {
   font-family: paragraph-font;
+}
+
+input {
+  color: black;
 }
 
 .mouse-wrap, .scroll-wrap {
@@ -1833,6 +1837,30 @@ a {
   bottom: -110px;
   width: 580px;
   right: 60px;
+}
+
+input, textarea {
+  color: black !important;
+  font-size: 15px !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black !important;
+}
+
+#formResult {
+  min-height: 100px;
+  border-radius: 15px;
+  font-size: 22px;
 }
 
 #camera img {
